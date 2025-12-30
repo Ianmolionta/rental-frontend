@@ -5,249 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PT Berkah Cahaya Maharani</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/assets/css/output.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="src/assets/css/style.css" />
-    <link rel="stylesheet" href="src/assets/css/output.css" />
-    <link rel="shortcut icon" href="src/assets/img/logo1.png" type="image/x-icon" />
   </head>
 
-  <body class="bg-gray-100">
+  <body class="bg-gray-50">
     <!-- NAVBAR -->
-    <nav
-      class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-lg shadow-md"
-    >
+    <nav class="fixed top-0 left-0 w-full z-50 glass-effect shadow-lg">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
-          <div class="flex items-center">
-            <div class="w-12 h-12 rounded-lg flex items-center justify-center">
-              <img src="src/assets/img/logo1.png" alt="" />
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+              <img src="src/assets/img/logo1.png" alt="">
+            </div>
+            <div class="hidden lg:block">
+              <h1 class="font-bold text-gray-900 text-lg font-montserrat">PT Berkah Cahaya Maharani</h1>
+              <p class="text-xs text-gray-600">Premium Car Rental</p>
             </div>
           </div>
 
           <!-- Desktop Menu -->
-          <ul
-            class="hidden md:flex gap-8 text-gray-800 font-semibold font-montserrat"
-          >
-            <li>
-              <a href="#home" class="hover:text-blue-600 transition">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="hover:text-blue-600 transition">About</a>
-            </li>
-            <li>
-              <a href="#layanan" class="hover:text-blue-600 transition"
-                >Layanan</a
-              >
-            </li>
-            <li>
-              <a href="#product" class="hover:text-blue-600 transition"
-                >Product</a
-              >
-            </li>
+          <ul class="hidden md:flex gap-8 text-gray-700 font-semibold font-montserrat text-sm">
+            <li><a href="#home" class="hover:text-blue-600 transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-600 transition-colors duration-300">About</a></li>
+            <li><a href="#layanan" class="hover:text-blue-600 transition-colors duration-300">Services</a></li>
+            <li><a href="#product" class="hover:text-blue-600 transition-colors duration-300">Fleet</a></li>
+            <li><a href="#location" class="hover:text-blue-600 transition-colors duration-300">Location</a></li>
           </ul>
 
+          <!-- CTA Button -->
+          <div class="hidden md:block">
+            <a href="#product">
+              <button class="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Book Now
+              </button>
+            </a>
+          </div>
+
           <!-- Burger Menu -->
-          <button
-            id="burger"
-            class="md:hidden relative w-8 h-6 focus:outline-none"
-          >
-            <span
-              id="b1"
-              class="absolute top-0 left-0 block w-8 h-0.5 bg-gray-800 transition-all duration-300"
-            ></span>
-            <span
-              id="b2"
-              class="absolute top-1/2 left-0 block w-8 h-0.5 bg-gray-800 transition-all duration-300 -translate-y-1/2"
-            ></span>
-            <span
-              id="b3"
-              class="absolute bottom-0 left-0 block w-8 h-0.5 bg-gray-800 transition-all duration-300"
-            ></span>
+          <button id="burger" class="md:hidden relative w-8 h-6 focus:outline-none">
+            <span id="b1" class="absolute top-0 left-0 block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
+            <span id="b2" class="absolute top-1/2 left-0 block w-8 h-0.5 bg-gray-800 transition-all duration-300 -translate-y-1/2"></span>
+            <span id="b3" class="absolute bottom-0 left-0 block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
           </button>
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="hidden md:hidden bg-white border-t border-gray-200"
-      >
+      <div id="mobileMenu" class="hidden md:hidden glass-effect border-t border-gray-200">
         <ul class="flex flex-col py-4 font-montserrat">
-          <a
-            href="#home"
-            class="px-6 py-3 text-gray-800 hover:bg-gray-100 transition"
-            >Home</a
-          >
-          <a
-            href="#about"
-            class="px-6 py-3 text-gray-800 hover:bg-gray-100 transition"
-            >About</a
-          >
-          <a
-            href="#layanan"
-            class="px-6 py-3 text-gray-800 hover:bg-gray-100 transition"
-            >Layanan</a
-          >
-          <a
-            href="#product"
-            class="px-6 py-3 text-gray-800 hover:bg-gray-100 transition"
-            >Product</a
-          >
+          <a href="#home" class="px-6 py-3 text-gray-800 hover:bg-blue-50 transition">Home</a>
+          <a href="#about" class="px-6 py-3 text-gray-800 hover:bg-blue-50 transition">About</a>
+          <a href="#layanan" class="px-6 py-3 text-gray-800 hover:bg-blue-50 transition">Services</a>
+          <a href="#product" class="px-6 py-3 text-gray-800 hover:bg-blue-50 transition">Fleet</a>
+          <a href="#location" class="px-6 py-3 text-gray-800 hover:bg-blue-50 transition">Location</a>
         </ul>
       </div>
     </nav>
 
     <!-- HOME -->
-    <section id="home" class="relative min-h-screen flex items-center">
-      <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10"></div>
       <div class="absolute inset-0 z-0">
-        <img
-          src="src/assets/img/rental.png"
-          alt=""
-          class="w-full h-screen opacity-70"
-        />
+        <div class="w-full h-full bg-gradient-to-br from-blue-900 to-gray-900"></div>
       </div>
 
-      <div class="container mx-auto px-6 lg:px-16 relative z-10">
-        <div class="max-w-3xl">
-          <h1
-            class="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
-          >
-            Rental Mobil Profesional di Sulawesi Tengah
+      <div class="container mx-auto px-6 lg:px-16 relative z-20 py-12">
+        <div class="max-w-4xl">
+          <div class="inline-block mb-6">
+            <span class="px-4 py-2 bg-blue-600/30 backdrop-blur-sm text-white rounded-full text-sm font-semibold border border-blue-400/30">
+              <i class="fas fa-star mr-2"></i>Trusted Car Rental in Central Sulawesi
+            </span>
+          </div>
+          <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-montserrat">
+            Professional Car Rental Services
           </h1>
-          <p class="text-white/90 text-lg md:text-xl mb-8 leading-relaxed">
-            Solusi transportasi terpercaya untuk kebutuhan pribadi dan bisnis
-            Anda. Armada lengkap dengan pelayanan terbaik di Sulawesi Tengah.
+          <p class="text-white/90 text-xl md:text-2xl mb-10 leading-relaxed font-light">
+            Reliable transportation solutions for your personal and business needs with complete fleet and best service
           </p>
-          <a href="#product">
-            <button
-              class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300"
-            >
-              Explore Our Product
-            </button>
-          </a>
+          <div class="flex flex-wrap gap-4">
+            <a href="#product">
+              <button class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
+                <span>Explore Our Fleet</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </a>
+            <a href="#layanan">
+              <button class="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/30">
+                Learn More
+              </button>
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 mt-16 max-w-2xl">
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-white mb-2">500+</h3>
+              <p class="text-white/70 text-sm">Happy Clients</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-white mb-2">10+</h3>
+              <p class="text-white/70 text-sm">Fleet Ready</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-white mb-2">24/7</h3>
+              <p class="text-white/70 text-sm">Support</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="py-20 lg:py-32 bg-white">
-      <div class="container mx-auto px-6 lg:px-16">
-        <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div class="space-y-6">
-            <h2
-              class="text-4xl lg:text-5xl font-bold text-gray-900 font-montserrat"
-            >
-              About Us
-            </h2>
+    <section id="about" class="py-24 lg:py-32 bg-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-30 -z-0"></div>
+      <div class="container mx-auto px-6 lg:px-16 relative z-10">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <div>
+              <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+                About Our Company
+              </span>
+              <h2 class="text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-6">
+                Your Trusted <span class="gradient-text">Transportation</span> Partner
+              </h2>
+            </div>
             <p class="text-gray-600 text-lg leading-relaxed">
-              PT Berkah Cahaya Maharani adalah perusahaan rental mobil terkemuka di
-              Sulawesi Tengah yang telah melayani ribuan pelanggan dengan
-              profesionalisme dan integritas tinggi.
+              PT Berkah Cahaya Maharani is a leading car rental company in Central Sulawesi that has served thousands of customers with high professionalism and integrity.
             </p>
             <p class="text-gray-600 text-lg leading-relaxed">
-              Kami menyediakan berbagai jenis kendaraan berkualitas dengan harga
-              kompetitif, didukung oleh tim yang berpengalaman dan pelayanan
-              24/7 untuk memastikan perjalanan Anda nyaman dan aman.
+              We provide various types of quality vehicles at competitive prices, supported by an experienced team and 24/7 service to ensure your journey is comfortable and safe.
             </p>
+            
+            <!-- Features -->
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="flex items-start space-x-3">
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-check text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Well-Maintained Fleet</h4>
+                  <p class="text-sm text-gray-600">Regular maintenance</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-check text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Professional Drivers</h4>
+                  <p class="text-sm text-gray-600">Experienced & licensed</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-check text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Competitive Prices</h4>
+                  <p class="text-sm text-gray-600">Best value for money</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-check text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">24/7 Service</h4>
+                  <p class="text-sm text-gray-600">Always ready to help</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="relative">
-            <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <div
-                class="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center"
-              >
-                <img src="src/assets/img/rental-image.png" alt="" class="h-full"/>
+            <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+              <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                <img src="src/assets/img/rental-image.png" alt="" class="h-full">
               </div>
             </div>
-            <div
-              class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600 rounded-2xl -z-10"
-            ></div>
+            <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl -z-10 float-animation"></div>
+            <div class="absolute -top-8 -left-8 w-32 h-32 bg-blue-100 rounded-full -z-10"></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- LAYANAN -->
-    <section id="layanan" class="py-20 lg:py-32 bg-gray-50">
+    <section id="layanan" class="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white relative">
       <div class="container mx-auto px-6 lg:px-16">
-        <div class="text-center mb-16">
-          <h2
-            class="text-4xl lg:text-5xl font-bold text-gray-900 font-montserrat mb-4"
-          >
-            Layanan Kami
+        <div class="text-center mb-20">
+          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+            What We Offer
+          </span>
+          <h2 class="text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-6">
+            Our <span class="gradient-text">Services</span>
           </h2>
-          <p class="text-gray-600 text-lg">
-            Berbagai pilihan layanan untuk memenuhi kebutuhan Anda
+          <p class="text-gray-600 text-xl max-w-2xl mx-auto">
+            Various service options to meet your transportation needs
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-          >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fa-solid fa-calendar-day text-blue-600 text-2xl"></i>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift border border-gray-100">
+            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+              <i class="fa-solid fa-calendar-day text-white text-3xl"></i>
             </div>
-            <h3 class="font-bold text-xl mb-3 text-gray-900">
-              Rental Mobil Harian
-            </h3>
-            <p class="text-gray-600">
-              Sewa mobil untuk kebutuhan harian dengan harga terjangkau
+            <h3 class="font-bold text-2xl mb-4 text-gray-900">Daily Rental</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Rent cars for daily needs at affordable prices with flexible options
             </p>
           </div>
 
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-          >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fa-solid fa-calendar-alt text-blue-600 text-2xl"></i>
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift border border-gray-100">
+            <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+              <i class="fa-solid fa-calendar-alt text-white text-3xl"></i>
             </div>
-            <h3 class="font-bold text-xl mb-3 text-gray-900">
-              Rental Bulanan/Kontrak
-            </h3>
-            <p class="text-gray-600">
-              Paket hemat untuk kebutuhan jangka panjang perusahaan
+            <h3 class="font-bold text-2xl mb-4 text-gray-900">Monthly Contract</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Economical packages for long-term corporate and business needs
             </p>
           </div>
 
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-          >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fa-solid fa-user-tie text-blue-600 text-2xl"></i>
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift border border-gray-100">
+            <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+              <i class="fa-solid fa-user-tie text-white text-3xl"></i>
             </div>
-            <h3 class="font-bold text-xl mb-3 text-gray-900">
-              Paket dengan Sopir
-            </h3>
-            <p class="text-gray-600">
-              Nikmati perjalanan nyaman dengan sopir profesional
+            <h3 class="font-bold text-2xl mb-4 text-gray-900">With Driver</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Enjoy a comfortable journey with our professional and experienced drivers
             </p>
           </div>
 
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-          >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="fa-solid fa-briefcase text-blue-600 text-2xl"></i>
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift border border-gray-100">
+            <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+              <i class="fa-solid fa-briefcase text-white text-3xl"></i>
             </div>
-            <h3 class="font-bold text-xl mb-3 text-gray-900">
-              Layanan Perjalanan Dinas
-            </h3>
-            <p class="text-gray-600">
-              Solusi transportasi untuk kebutuhan bisnis Anda
+            <h3 class="font-bold text-2xl mb-4 text-gray-900">Business Travel</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Transportation solutions for your business and official travel needs
             </p>
           </div>
         </div>
@@ -255,229 +256,364 @@
     </section>
 
     <!-- PRODUCT -->
-    <section id="product" class="py-20 lg:py-32 bg-white">
-      <div class="container mx-auto px-6 lg:px-16">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12"
-        >
-          <div>
-            <h2
-              class="text-4xl lg:text-5xl font-bold text-gray-900 font-montserrat"
-            >
-              Product
-            </h2>
-            <p class="text-gray-600 mt-2">
-              Pilih kendaraan yang sesuai dengan kebutuhan Anda
-            </p>
-          </div>
-
-          <div class="w-full md:w-auto">
-            <div class="relative">
-              <input
-                type="search"
-                class="w-full md:w-80 px-4 py-3 pl-12 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-                placeholder="Cari Mobil..."
-              />
-              <i
-                class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
-              ></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Product Cards -->
-          <div
-            class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center"
-            >
-              <i class="fas fa-car text-white text-6xl opacity-50"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="font-bold text-xl mb-2">Toyota Avanza</h3>
-              <p class="text-gray-600 mb-4">7 Penumpang • Manual</p>
-              <div class="flex justify-between items-center">
-                <span class="text-2xl font-bold text-blue-600">Rp 350K</span>
-                <span class="text-sm text-gray-500">/hari</span>
-              </div>
-              <div class="flex justify-end">
-                <div
-                  class="mt-4 text-right rounded-lg bg-blue-600 px-4 py-2 inline-block hover:bg-blue-700 transition text-white"
-                >
-                  <a href="">Pesan Sekarang</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center"
-            >
-              <i class="fas fa-car text-white text-6xl opacity-50"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="font-bold text-xl mb-2">Toyota Innova</h3>
-              <p class="text-gray-600 mb-4">8 Penumpang • Manual</p>
-              <div class="flex justify-between items-center">
-                <span class="text-2xl font-bold text-blue-600">Rp 450K</span>
-                <span class="text-sm text-gray-500">/hari</span>
-              </div>
-              <div class="flex justify-end">
-                <div
-                  class="mt-4 text-right rounded-lg bg-blue-600 px-4 py-2 inline-block hover:bg-blue-700 transition text-white"
-                >
-                  <a href="">Pesan Sekarang</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center"
-            >
-              <i class="fas fa-car text-white text-6xl opacity-50"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="font-bold text-xl mb-2">Toyota Fortuner</h3>
-              <p class="text-gray-600 mb-4">7 Penumpang • Automatic</p>
-              <div class="flex justify-between items-center">
-                <span class="text-2xl font-bold text-blue-600">Rp 750K</span>
-                <span class="text-sm text-gray-500">/hari</span>
-              </div>
-              <div class="flex justify-end">
-                <div
-                  class="mt-4 text-right rounded-lg bg-blue-600 px-4 py-2 inline-block hover:bg-blue-700 transition text-white"
-                >
-                  <a href="">Pesan Sekarang</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Mitra" class="py-20 lg:py-32 bg-gray-50">
+    <section id="product" class="py-24 lg:py-32 bg-white">
       <div class="container mx-auto px-6 lg:px-16">
         <div class="text-center mb-16">
-          <h2
-            class="text-4xl lg:text-5xl font-bold text-gray-900 font-montserrat mb-4"
-          >
-            Parter Kami
+          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+            Our Fleet
+          </span>
+          <h2 class="text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-6">
+            Choose Your <span class="gradient-text">Vehicle</span>
           </h2>
-          <p class="text-gray-600 text-lg">
-            Bekerja sama dengan lembaga dan perusahaan terpercaya
+          <p class="text-gray-600 text-xl">
+            Select the vehicle that suits your needs and budget
           </p>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-          <div class="flex items-center justify-center">
-            <img src="src/assets/img/mitra1.png" alt="Mitra 1" class="max-h-12"/>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product Card 1 -->
+          <div class="bg-gradient-to-b from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl hover-lift border border-gray-200">
+            <div class="h-56 bg-gradient-to-br bg-gray-500 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-gray-500/10"></div>
+              <img src="src/assets/img/avanza.png" alt="">
+            </div>
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-2xl text-gray-900">Toyota Avanza</h3>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Available</span>
+              </div>
+              <div class="flex items-center space-x-4 text-gray-600 mb-6">
+                <span class="flex items-center"><i class="fas fa-users mr-2"></i>7 Seats</span>
+                <span class="flex items-center"><i class="fas fa-cog mr-2"></i>Manual</span>
+              </div>
+              <div class="flex items-end justify-between mb-6">
+                <div>
+                  <p class="text-gray-500 text-sm mb-1">Starting from</p>
+                  <div class="flex items-baseline">
+                    <span class="text-4xl font-bold text-blue-600">350K</span>
+                    <span class="text-gray-500 ml-2">/day</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                Book Now
+              </button>
+            </div>
           </div>
-          <div class="flex items-center justify-center">
-            <img src="src/assets/img/mitra2.png" alt="Mitra 2" class="max-h-12"/>
+
+          <!-- Product Card 2 -->
+          <div class="bg-gradient-to-b from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl hover-lift border border-gray-200">
+            <div class="h-56 bg-gradient-to-br bg-gray-500 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-gray-500/10"></div>
+              <img src="src/assets/img/innova.png" alt="">
+            </div>
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-2xl text-gray-900">Toyota Innova</h3>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Available</span>
+              </div>
+              <div class="flex items-center space-x-4 text-gray-600 mb-6">
+                <span class="flex items-center"><i class="fas fa-users mr-2"></i>8 Seats</span>
+                <span class="flex items-center"><i class="fas fa-cog mr-2"></i>Manual</span>
+              </div>
+              <div class="flex items-end justify-between mb-6">
+                <div>
+                  <p class="text-gray-500 text-sm mb-1">Starting from</p>
+                  <div class="flex items-baseline">
+                    <span class="text-4xl font-bold text-blue-600">450K</span>
+                    <span class="text-gray-500 ml-2">/day</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                Book Now
+              </button>
+            </div>
           </div>
-          <div class="flex items-center justify-center">
-            <img src="src/assets/img/mitra3.png" alt="Mitra 3" class="max-h-12"/>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="src/assets/img/mitra4.png" alt="Mitra 4" class="max-h-12"/>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="src/assets/img/mitra5.png" alt="Mitra 5" class="max-h-12"/>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="src/assets/img/mitra6.png" alt="Mitra 6" class="max-h-12"/>
+
+          <!-- Product Card 3 -->
+          <div class="bg-gradient-to-b from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl hover-lift border border-gray-200">
+            <div class="h-56 bg-gradient-to-br bg-gray-500 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-gray-500/10"></div>
+              <img src="src/assets/img/fortuner.png" alt="">
+            </div>
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-2xl text-gray-900">Toyota Fortuner</h3>
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold">Popular</span>
+              </div>
+              <div class="flex items-center space-x-4 text-gray-600 mb-6">
+                <span class="flex items-center"><i class="fas fa-users mr-2"></i>7 Seats</span>
+                <span class="flex items-center"><i class="fas fa-cog mr-2"></i>Automatic</span>
+              </div>
+              <div class="flex items-end justify-between mb-6">
+                <div>
+                  <p class="text-gray-500 text-sm mb-1">Starting from</p>
+                  <div class="flex items-baseline">
+                    <span class="text-4xl font-bold text-blue-600">750K</span>
+                    <span class="text-gray-500 ml-2">/day</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                Book Now
+              </button>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- PARTNERS -->
+    <section id="Mitra" class="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
+      <div class="container mx-auto px-6 lg:px-16">
+        <div class="text-center mb-20">
+          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+            Trusted Partners
+          </span>
+          <h2 class="text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-6">
+            Our <span class="gradient-text">Partners</span>
+          </h2>
+          <p class="text-gray-600 text-xl max-w-2xl mx-auto">
+            Collaborating with trusted institutions and companies to provide the best service
+          </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+            <!-- Partner 1 -->
+            <div class="flex flex-col items-center text-center space-y-6 hover-lift">
+              <div class="bg-white rounded-3xl p-12 w-full shadow-xl border-2 border-gray-100">
+                <div class="w-32 h-32 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center">
+                  <img src="src/assets/img/lprm.png" alt="">
+                </div>
+              </div>
+              <div>
+                <h3 class="text-gray-900 font-bold text-xl mb-2">LPRM Sulteng</h3>
+                <p class="text-gray-600">Lembaga Pengusaha Rental Mobil Sulteng</p>
+              </div>
+            </div>
+
+            <!-- Partner 2 -->
+            <div class="flex flex-col items-center text-center space-y-6 hover-lift">
+              <div class="bg-white rounded-3xl p-12 w-full shadow-xl border-2 border-gray-100">
+                <div class="w-32 h-32 mx-auto bg-purple-50 rounded-2xl flex items-center justify-center">
+                  <img src="src/assets/img/cv.png" alt="">
+                </div>
+              </div>
+              <div>
+                <h3 class="text-gray-900 font-bold text-xl mb-2">CV Pettatawang</h3>
+                <p class="text-gray-600">CV. Pettatawang Tri Putra Jaya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & CONTACT -->
+    <section id="location" class="py-24 lg:py-32 bg-white">
+      <div class="container mx-auto px-6 lg:px-16">
+        <div class="text-center mb-20">
+          <span class="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+            Find Us
+          </span>
+          <h2 class="text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-6">
+            Our <span class="gradient-text">Location</span>
+          </h2>
+          <p class="text-gray-600 text-xl max-w-2xl mx-auto">
+            Visit our office or contact us for more information
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <i class="fas fa-info-circle text-blue-600 mr-3"></i>
+                Contact Information
+              </h3>
+              
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Address</h4>
+                    <p class="text-gray-600">Jl. Example Street No. 123<br>Palu, Central Sulawesi 94111</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-phone text-green-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                    <p class="text-gray-600">+62 451 123 4567<br>+62 812 3456 7890 (WhatsApp)</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-envelope text-red-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                    <p class="text-gray-600">info@cahyamaharani.com<br>rental@cahyamaharani.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-clock text-purple-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Business Hours</h4>
+                    <p class="text-gray-600">Monday - Sunday: 24/7<br>We are always ready to serve you</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <i class="fas fa-share-alt text-gray-700 mr-3"></i>
+                Follow Us
+              </h3>
+              <div class="flex flex-wrap gap-4">
+                <a href="#" class="flex items-center space-x-3 px-6 py-3 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <i class="fab fa-facebook-f text-blue-600 text-xl"></i>
+                  <span class="font-semibold text-gray-700">Facebook</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-6 py-3 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <i class="fab fa-instagram text-pink-600 text-xl"></i>
+                  <span class="font-semibold text-gray-700">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@garasirentalmobilpalu" target="_blank" class="flex items-center space-x-3 px-6 py-3 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <i class="fab fa-tiktok text-gray-800 text-xl"></i>
+                  <span class="font-semibold text-gray-700">TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="space-y-6">
+            <div class="map-container rounded-2xl overflow-hidden shadow-2xl border-4 border-white" style="height: 500px;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817324842392!2d119.90014737585624!3d-0.9128545990832286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNTQnNDYuMyJTIDExOcKwNTQnMDkuOSJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="bg-blue-600 text-white rounded-2xl p-6 text-center">
+              <p class="text-lg font-semibold mb-2">Need Directions?</p>
+              <p class="text-blue-100 mb-4">Click the map to get directions via Google Maps</p>
+              <a href="https://www.google.com/maps/@-0.9128546,119.9027484,17z" target="_blank" class="inline-flex items-center space-x-2 px-6 py-3 bg-white text-blue-600 font-semibold rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <i class="fas fa-directions"></i>
+                <span>Get Directions</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16">
       <div class="container mx-auto px-6 lg:px-16">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div
-              class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-4"
-            >
-              <img src="src/assets/img/logo1.png" alt="" />
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
+                <i class="fas fa-car text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl">PT BCM</h3>
+                <p class="text-sm text-gray-400">Car Rental</p>
+              </div>
             </div>
-            <p class="text-gray-400">
-              PT Cahya Maharani - Rental mobil profesional di Sulawesi Tengah
+            <p class="text-gray-400 leading-relaxed">
+              PT Berkah Cahaya Maharani - Professional car rental in Central Sulawesi with commitment to excellence
             </p>
+            <div class="flex space-x-3 pt-4">
+              <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@garasirentalmobilpalu" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
           </div>
 
           <div>
-            <h4 class="font-bold text-lg mb-4">Quick Links</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li>
-                <a href="#home" class="hover:text-white transition">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="hover:text-white transition">About</a>
-              </li>
-              <li>
-                <a href="#layanan" class="hover:text-white transition"
-                  >Layanan</a
-                >
-              </li>
-              <li>
-                <a href="#product" class="hover:text-white transition"
-                  >Product</a
-                >
-              </li>
+            <h4 class="font-bold text-lg mb-6 text-white">Quick Links</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li><a href="#home" class="hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Home</a></li>
+              <li><a href="#about" class="hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>About Us</a></li>
+              <li><a href="#layanan" class="hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Services</a></li>
+              <li><a href="#product" class="hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Our Fleet</a></li>
+              <li><a href="#location" class="hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Location</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="font-bold text-lg mb-4">Sosial Media</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li>
-                <a href="">
-                  <i class="fa-brands fa-facebook-f mr-2"></i> +62 xxx xxxx xxxx
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fa-brands fa-instagram mr-2"></i> info@cahyamaharani.com
-                </a>
-              </li>
-              <li>
-                <a href="https://www.tiktok.com/@garasirentalmobilpalu" target="_blank">
-                  <i class="fa-brands fa-tiktok mr-2"></i> GARASI RENTAL MOBIL PALU
-                </a>
-              </li>
+            <h4 class="font-bold text-lg mb-6 text-white">Our Services</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center"><i class="fas fa-check text-blue-400 text-xs mr-2"></i>Daily Car Rental</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-400 text-xs mr-2"></i>Monthly Contract</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-400 text-xs mr-2"></i>With Driver Service</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-400 text-xs mr-2"></i>Business Travel</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-400 text-xs mr-2"></i>Airport Transfer</li>
             </ul>
           </div>
+
           <div>
-            <h4 class="font-bold text-lg mb-4">Contact Us</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><i class="fas fa-phone mr-2"></i> +62 xxx xxxx xxxx</li>
-              <li>
-                <i class="fas fa-envelope mr-2"></i> info@cahyamaharani.com
+            <h4 class="font-bold text-lg mb-6 text-white">Contact Us</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                <span>Palu, Central Sulawesi<br>Indonesia</span>
               </li>
-              <li>
-                <i class="fas fa-map-marker-alt mr-2"></i> Palu, Sulawesi Tengah
+              <li class="flex items-center">
+                <i class="fas fa-phone text-blue-400 mr-3"></i>
+                <span>+62 451 123 4567</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                <span>info@cahyamaharani.com</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-clock text-blue-400 mr-3"></i>
+                <span>24/7 Available</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 PT Cahya Maharani. All rights reserved.</p>
+        <div class="section-divider mb-8"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+          <p>&copy; 2025 PT Berkah Cahaya Maharani. All rights reserved.</p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+            <a href="#" class="hover:text-blue-400 transition-colors duration-300">FAQ</a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="assets/js/index.js"></script>
+    <script src="src/assets/js/index.js"></script>
   </body>
 </html>
